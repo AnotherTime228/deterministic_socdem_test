@@ -13,10 +13,10 @@ Due to our investments in media, socialism is becoming more popular, including a
 
 - @awaken: Awaken their class consciousness!
 - @refute: No, we will not do this.
-- @easy_discard_1: Return card to hand.
+- @easy_discard: Return card to hand.
 - @cancel_advisor_action
 
-@easy_discard_1
+@easy_discard
 view-if: last_advisor_action = 0
 go-to: easy_discard
 
