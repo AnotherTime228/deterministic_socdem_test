@@ -23,7 +23,7 @@ go-to: easy_discard
 
 @awaken
 choose-if: aufhauser_advisor or radio >= 2 or commercialized_media >=2
-subtitle: [? if aufhauser_advisor : Aufhäuser can use the AfA-bund to do this. ?] [? if radio >= 2: We can use our existing radio program for this. ?] [? if commercialized_media >= 2: We can use our existing newspapers for this. ?] 
+subtitle: [? if aufhauser_advisor: Aufhäuser can use the AfA-bund to do this. ?] [? if radio >= 2 and not aufhauser_adivsor: We can use our existing radio program for this. ?] [? if commercialized_media >= 2 and not aufhauser_advisor: We can use our existing newspapers for this. ?] 
 unavailable-subtitle: [? if radio < 2 and not aufhauser_advisor: Consider hiring Aufhäuser, or expanding radio programs ?] [? if commercialized_media < 2 and not aufhauser_advisor: Considering hiring Aufhäuser, or commercializing our newspapers. ?]
 on-arrival: new_middle_spd += 10*(1-dissent); reformist_dissent += 2; labor_dissent += 3; left_strength += 5; reformist_strength += 5; labor_strength += 5; socialism += 4*(1 - dissent); new_middle_conscious = 1
 
