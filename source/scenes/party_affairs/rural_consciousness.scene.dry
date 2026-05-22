@@ -23,7 +23,7 @@ Due to our introduction of agrarian policies and the increased popularity of soc
 view-if: last_advisor_action = 0
 go-to: easy_discard
 
-@awaken_1:
+@awaken_1
 choose-if: baade_advisor or commercialized_media >=2
 subtitle: [? if baade_advisor: Baade, through his expertise on agriculture, can help us raise the consciousness of the rural workers and peasants. ?] [? if commercialized_media >= 2 and not baade_advisor: We can use our existing newspapers for this. ?]
 unavailable-subtitle: [if not baade_adivsor: Consider hiring Baade. ?][? if commercialized_media < 2 and not baade_advisor: Considering hiring Baade, or commercializing our newspapers. ?]
@@ -31,7 +31,7 @@ on-arrival: rural_spd += 10*(1-dissent); reformist_dissent += 2; labor_dissent +
 
 We have taken advantage of the situation and have awoken the class consciousness of the peasantry and the rural workers. Increasingly, they flock to our party. 
 
-@awaken_2:
+@awaken_2
 choose-if: radio >= 2
 subtitle: We can invest 1 budget into building more powerful radio transmission stations so that we can expand our radio network to the countryside.
 unavailable-subtitle: [? if budget < 1: We do not have enough budget to do this. ?]
