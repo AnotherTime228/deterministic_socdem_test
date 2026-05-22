@@ -29,7 +29,7 @@ subtitle: [? if baade_advisor: Baade, through his expertise on agriculture, can 
 unavailable-subtitle: [if not baade_adivsor: Consider hiring Baade. ?][? if commercialized_media < 2 and not baade_advisor: Considering hiring Baade, or commercializing our newspapers. ?]
 on-arrival: rural_spd += 10*(1-dissent); reformist_dissent += 2; labor_dissent += 3; left_strength += 5; reformist_strength += 5; labor_strength += 5; socialism += 4*(1 - dissent); rural_conscious = 1
 
-We have taken advantage of the situation and have awoken the class consciousness of the peasantry and the rural workers. Increasingly, the flock to our party. 
+We have taken advantage of the situation and have awoken the class consciousness of the peasantry and the rural workers. Increasingly, they flock to our party. 
 
 @awaken2:
 choose-if: radio >= 2
@@ -37,7 +37,7 @@ subtitle: We can invest 1 budget into building more powerful radio transmission 
 unavailable-subtitle: [? if budget < 1: We do not have enough budget to do this. ?]
 on-arrival: rural_spd += 10*(1-dissent); budget -= 1; reformist_dissent += 2; labor_dissent += 3; left_strength += 5; reformist_strength += 5; labor_strength += 5; socialism += 4*(1 - dissent); rural_conscious = 1
 
-We have taken advantage of the situation and have awoken the class consciousness of the peasantry and the rural workers. Increasingly, the flock to our party. 
+We have taken advantage of the situation and have awoken the class consciousness of the peasantry and the rural workers. Increasingly, they flock to our party. 
 
 @refute
 
