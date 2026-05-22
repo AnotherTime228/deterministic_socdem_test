@@ -23,7 +23,7 @@ Due to our introduction of agrarian policies and the increased popularity of soc
 view-if: last_advisor_action = 0
 go-to: easy_discard
 
-@awaken_1
+@awaken_1:
 choose-if: baade_advisor or commercialized_media >=2
 subtitle: [? if baade_advisor: Baade, through his expertise on agriculture, can help us raise the consciousness of the rural workers and peasants. ?] [? if commercialized_media >= 2 and not baade_advisor: We can use our existing newspapers for this. ?]
 unavailable-subtitle: [if not baade_adivsor: Consider hiring Baade. ?][? if commercialized_media < 2 and not baade_advisor: Considering hiring Baade, or commercializing our newspapers. ?]
