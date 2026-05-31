@@ -31,6 +31,8 @@ on-arrival: rural_spd += 10*(1-dissent); left_strength += 3 if land_reform == 0;
 
 We have taken advantage of the situation and have awoken the class consciousness of the peasantry and the rural working class. Increasingly, they flock to our party. 
 
+By awakening the class consciousness of the peasantry and the rural working class, failing a secondary burden will lessen the extent to which their support is reduced. In addition, our media campaigning and rallies will have more of an effect amongst rural voters, now that they are conscious. 
+
 @awaken_2
 choose-if: radio >= 2 and spd_in_government = 1
 subtitle: We can invest 1 budget into building more powerful radio transmission stations so that we can expand our radio network to the countryside.
@@ -38,6 +40,8 @@ unavailable-subtitle: [? if budget < 1: We sadly do not have enough budget for t
 on-arrival: rural_spd += 10*(1-dissent); budget -= 1; left_strength += 3 if land_reform == 0; left_dissent += 3 if land_reform == 0; left_strength += 5 if land_reform >= 1; reformist_strength += 5; labor_strength += 4; socialism += 4*(1 - dissent); rural_conscious = 1
 
 We have taken advantage of the situation and have awoken the class consciousness of the peasantry and the rural working class. Increasingly, they flock to our party. 
+
+By awakening the class consciousness of the peasantry and the rural working class, failing a secondary burden will lessen the extent to which their support is reduced. In addition, our media campaigning and rallies will have more of an effect amongst rural voters, now that they are conscious. 
 
 @refute
 
