@@ -4010,7 +4010,7 @@ if (Q.spd_government_burden_timer == 0 && Q.spd_government_burden_seen == 1 && Q
         Q.reformist_dissent += 5;
         Q.gov_burden_fail += 1;
     }
-    console.log (Q.new-middle_spd)
+    console.log (Q.new_middle_spd)
     console.log (Q.rural_spd)
     console.log (Q.old_middle_spd)
     console.log (Q.catholics_spd)
