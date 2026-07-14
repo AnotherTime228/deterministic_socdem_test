@@ -45,7 +45,7 @@ on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; la
 @radicalize_rural
 title: Awaken the class consciousness of the peasantry and the rural working class. 
 subtitle: As our expert on agriculture, Baade can help awaken the class consciousness of peasants and rural workers.
-choose-if: socialism >= 50 and rural_spd_normalized >= 15 and rural_policy >= 1
+choose-if: socialism >= 50 and rural_spd_normalized >= 15 and rural_policy >= 1 and rural_conscious == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if socialism < 50: We must seek to make socialism more popular. ?][? if rural_spd_normalized < 15: We sadly do not have enough support amongst rural voters. ?][? if rural_policy == 0: We have not enacted any rural policies. ?][? if rural_conscious == 1: We have already awoken the class consciousness of the peasantry and rural working class. ?]
 max-visits: 1
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
